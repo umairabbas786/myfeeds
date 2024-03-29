@@ -16,7 +16,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Give $(PRODUCT_NAME) permission to save photos",
+        "NSCameraUsageDescription": "Give $(PRODUCT_NAME) permission to access your camera",
+        "NSMicrophoneUsageDescription": "Give $(PRODUCT_NAME) permission to use your microphone"
+      }
     },
     "android": {
       "adaptiveIcon": {
