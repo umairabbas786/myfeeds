@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ammarsami5098.MyFeeds"
+      "package": "com.umairabbas786.MyFeeds"
     },
     "web": {
       "bundler": "metro",
