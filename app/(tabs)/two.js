@@ -96,7 +96,7 @@ const TabTwoScreen = () => {
   };
 
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: "white"}}>
       <View style={styles.cardContainer}>
         <View style={styles.profileContainer}>
           <Image
@@ -135,7 +135,7 @@ const TabTwoScreen = () => {
             <Text style={styles.uploadImageText}>Upload Image</Text>
           </TouchableOpacity>
         </View>
-        <Text style={{color: 'white', marginVertical: 5}}>Write a Title</Text>
+        <Text style={{color: 'black', marginVertical: 5}}>Write a Title</Text>
         <TextInput
           style={styles.captionInput}
           placeholder="e.g: Mood"
@@ -143,7 +143,7 @@ const TabTwoScreen = () => {
           value={title}
           onChangeText={setTitle}
         />
-         <Text style={{color: 'white', marginVertical: 5}}>Write a Caption</Text>
+         <Text style={{color: 'black', marginVertical: 5}}>Write a Caption</Text>
         <TextInput
           style={styles.captionInput}
           placeholder="e.g: Feeling amazing today"
@@ -152,7 +152,7 @@ const TabTwoScreen = () => {
           onChangeText={setCaption}
         />
         {isLoading ? (
-          <ActivityIndicator size="large" color="white" />
+          <ActivityIndicator size="large" color="black" />
         ) : (
           <TouchableOpacity style={styles.postBtn} onPress={handlePost}>
             <Text style={styles.postBtnText}>Post to Feed</Text>
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#EDF0F2",
     borderRadius: 25,
     padding: 10,
-    marginTop: 10, // Adjust space between image and button if needed
+    marginTop: 10,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -200,6 +200,8 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     fontSize: 25,
     fontWeight: "bold",
+    color: "black",
+    marginBottom: 15
   },
   profileContainer: {
     alignItems: "center",
